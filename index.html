@@ -1,53 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-mdb-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Hi pal 👋</title>
 </head>
 <body data-bs-theme="dark">
 
-<div class="container " id="test-div">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <div class="col">
-        <div class="card mx-3 shadow" style="width: 18rem;">
-            <img class="card-img-top" alt="" id="squat-pic">
-            <div class="card-body">
-              <h5 class="card-title" id="squat-title"></h5>
-              <p class="card-text" id="squat-target"></p>
-              <a href="#" class="btn btn-outline-secondary" id="get-squat">Get squats info</a>
+<header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="pl.pal logo" id="nav-logo"></a>
+              <button
+                data-mdb-collapse-init
+                class="navbar-toggler"
+                type="button"
+                data-mdb-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sbdinfo.html">Exercise info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Another page</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
+          </nav>
+          <!-- Navbar -->
 
-          <div class="col">
-          <div class="card mx-3 shadow" style="width: 18rem;">
-            <img class="card-img-top" alt="" id="bench-pic">
-            <div class="card-body">
-              <h5 class="card-title" id="bench-title"></h5>
-              <p class="card-text" id="bench-target"></p>
-              <a href="#" class="btn btn-outline-secondary" id="get-bench">Get bench info</a>
-            </div>
-          </div>
-        </div>
-
-          <div class="col">
-          <div class="card mx-3 shadow" style="width: 18rem;">
-            <img class="card-img-top" alt="" id="deadlift-pic">
-            <div class="card-body">
-              <h5 class="card-title" id="deadlift-title"></h5>
-              <p class="card-text" id="deadlift-target"></p>
-              <a href="#" class="btn btn-outline-secondary" id="get-deadlift">Get deadlift info</a>
-            </div>
-          </div>
-        </div>
+          <!-- Background image -->
+  <div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('assets/img/hero.jpeg');
+    height: 500px;
+  "
+>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Heading</h1>
+        <h4 class="mb-3">Subheading</h4>
+        <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+      </div>
     </div>
+  </div>
 </div>
-    
+</header>
+
+        Photo by <a href="https://unsplash.com/@aloragriffiths?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alora Griffiths</a> on <a href="https://unsplash.com/photos/person-wearing-gray-tank-top-XW47yQNE0TQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+        <footer class="bg-body-tertiary text-center">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Form -->
+              <section class="">
+                <form action="">
+                  <!--Grid row-->
+                  <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                      <p class="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                      </p>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                      <!-- Email input -->
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="form5Example26" class="form-control" />
+                        <label class="form-label" for="form5Example26">Email address</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-auto">
+                      <!-- Submit button -->
+                      <button data-mdb-ripple-init type="submit" class="btn btn-primary mb-4">
+                        Subscribe
+                      </button>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </form>
+              </section>
+              <!-- Section: Form -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Copyright:
+              <a class="text-body" href="https://liamco.io">Liam Cottrell</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
 </body>
 </html>
