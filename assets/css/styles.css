@@ -6,10 +6,19 @@
 #test-div {
     border: 2px solid black;
     padding: 50px;
+    margin: 50px auto;
 }
 
 #nav-logo {
     height: 40px;
+}
+
+#home-hero {
+    height: 60vh;
+}
+
+.heroes {
+    height: 35vh;
 }
 
 #credits {
